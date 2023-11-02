@@ -65,7 +65,7 @@
   margin: 0;
 }
 .about__name h4 span {
-  color: #EDA600;
+  color: #eda600;
 }
 .about__content p {
   font-size: 1.6rem;
@@ -151,7 +151,7 @@
   margin: 4rem 0 0;
 }
 .vision__para-content p {
-  color: #514F5A;
+  color: #514f5a;
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
@@ -200,7 +200,7 @@
   right: 1rem;
   border-radius: 1.6rem;
   border: 0.1rem solid #454545;
-  background: #F00;
+  background: #f00;
   font-size: 1.2rem;
   font-weight: 400;
   padding: 0.4rem 1.2rem;
@@ -209,7 +209,7 @@
   position: absolute;
   bottom: 0;
   border-radius: 100px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   height: 0.4rem;
   width: 75%;
   left: 2rem;
@@ -230,7 +230,7 @@
 }
 
 .advantage {
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 .advantage__box {
   margin: 3.4rem 0 0;
@@ -257,7 +257,7 @@
 .experience__content p {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #514F5A;
+  color: #514f5a;
   margin: 0;
 }
 .experience__img {
@@ -276,7 +276,7 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin: 2rem 0 0;
-  color: #514F5A;
+  color: #514f5a;
 }
 .experience__card-content h5 {
   font-size: 1.2rem;
@@ -311,7 +311,7 @@
 }
 
 .education {
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 .education__box {
   margin: 4rem 0 0;
@@ -333,7 +333,7 @@
   border-bottom: 0.1rem solid #454545;
 }
 .education__card p {
-  color: #514F5A;
+  color: #514f5a;
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
@@ -381,11 +381,50 @@
 
 .lang__box {
   margin: 5rem 0 0;
+  display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
 }
 .lang__card {
   border-radius: 16px;
   border: 1px solid #454545;
   padding: 3.2rem 4rem;
+}
+.lang__card h4 {
+  color: #f00;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+.lang__card p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hobbies {
+  background: #1e1e1e;
+}
+.hobbies__box {
+  margin: 5rem 0 0;
+  display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+}
+.hobbies__card {
+  border-radius: 16px;
+  border: 1px solid #454545;
+  padding: 3.2rem 4rem;
+}
+.hobbies__card h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+.hobbies__img {
+  margin: 0 0 2.4rem;
+  padding: 0 0 2.4rem;
+  border-bottom: 0.2rem solid #f00;
 }
 
 * {
