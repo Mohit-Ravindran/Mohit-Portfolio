@@ -1,0 +1,49 @@
+.header{
+    border-bottom: 0.1rem solid #ffffff4d;
+
+    &__flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    &__end{
+        h4{
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+            height: 11.1rem;
+        padding: 0 3rem;
+    }
+    &__contact{
+        span{
+            font-weight: 500;
+        }
+        a{
+            font-weight: 400;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &__middle{
+        flex: 1;
+        border-left: 0.1rem solid #ffffff4d;
+        border-right: 0.1rem solid #ffffff4d;
+    }
+    &__social{
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+    }
+    &__logo{
+        padding: 2rem 0;
+    }
+}

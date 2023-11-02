@@ -1,0 +1,381 @@
+.about{
+    height: 100vh;
+    padding: 4rem 0 0;
+
+    &__title{
+        h1{
+            text-align: center;
+            font-size: 12rem;
+            font-weight: 700;
+                -webkit-text-stroke: 0.1rem $white;
+                    color: transparent;
+        }
+    }
+
+    &__name{
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+        margin: 0 0 0.8rem;
+        padding: 4rem 0 0;
+
+        h4{
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 0 ;
+            span{
+                color: #EDA600;
+            }
+        }
+    }
+
+    &__content{
+        p{
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    &__flex{
+        padding: 4rem 0 0;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__count{
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        h3{
+            color: #f00;
+            font-size: 4.8rem;
+            font-weight: 400;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+
+        }
+    }
+    &__sign{
+        position: absolute;
+        right: 0;
+        bottom: 5rem;
+    }
+    &__profile{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+    &__profile-link{
+        position: absolute;
+        right: 0;
+        top: 35%;
+
+    }
+    &__left{
+        position: absolute;
+        left: 0;
+        top: 10%;
+    }
+    &__right {
+            position: absolute;
+            right: 0;
+            top: 12%;
+        }
+
+}
+
+.vision{
+    &__link{
+        display: inline-flex;
+        margin: 0 0 2rem;
+        a{
+            border-radius: 100px;
+                border: 1px solid #454545;
+                padding: 1.4rem 2.4rem;
+                text-decoration: none;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $white;
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+        }
+    }
+    &__content{
+        h2{
+            font-size: 6rem;
+            font-weight: 700;
+            margin: 0 0 1rem;
+            -webkit-text-stroke: 0.1rem $white;
+                color: transparent;
+        }
+    }
+    &__para{
+        display: flex;
+        align-items:baseline;
+        gap: 2rem;
+        margin: 4rem 0 0;
+    }
+
+    &__para-content{
+        p{
+            color: #514F5A;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    &__btn{
+        margin: 4rem 0 0;
+        a{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: #f00;
+            padding: 1.6rem 2.4rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            display: inline-block;
+            text-decoration: none;
+            color: $white;
+            border-radius: 3rem;
+        }
+    }
+    &__img{
+        text-align: end;
+    }
+}
+
+.skill{
+    background-color: #212121;
+
+    &__box{
+        margin: 6rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.3rem 1.6rem;
+    }
+    &__card{
+        border-radius: 16px;
+            border: 1px solid #454545;
+            padding: 3rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+    }
+    &__value{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border-radius: 1.6rem;
+        border: 0.1rem solid #454545;
+        background: #F00;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0.4rem 1.2rem;
+    }
+    &__bar{
+        position: absolute;
+        bottom: 0;
+        border-radius: 100px;
+        background: #D9D9D9;
+        height: 0.4rem;
+        width: 75%;
+        left: 2rem;
+
+    }
+
+}
+
+.title{
+    padding: 4rem 0;
+    background: #454545;
+    margin: 8rem 0;
+    overflow: hidden;
+    h2{
+        font-size: 8rem;
+        font-weight: 700;
+            -webkit-text-stroke: 0.1rem $white;
+                color: transparent;
+        white-space: nowrap;
+    }
+}
+
+.advantage{
+    background: #1E1E1E;
+    &__box{
+        margin: 3.4rem 0 0;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        border-radius: 10rem;
+            background: #454545;
+            padding: 1rem 1.6rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+        p{
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+
+.experience{
+    &__content{
+        p{
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #514F5A;
+            margin: 0;
+        }
+    }
+    &__img{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        margin: 8rem 0 0;
+    }
+    &__card{
+        padding: 3.2rem;
+        border-radius: 16px;
+            border: 1px solid #454545;
+            background: #070707;
+
+            p{
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin: 2rem 0 0;
+                color: #514F5A;
+            }
+    }
+    &__card-content{
+        h5{
+            font-size: 1.2rem;
+            font-weight: 400;
+            border-radius: 100px;
+                background: #454545;
+                padding: 0.4rem 1.6rem;
+                display: inline-block;
+                margin: 0 0 2rem;
+        }
+        h3{
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        img{
+            display: block;
+            margin: 0 0 2rem;
+        }
+    }
+    &__card-flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 0.1rem solid #454545;
+        padding: 0 0 2rem;
+    }
+    &__list{
+        padding: 0 0 0 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+}
+
+.education{
+    background: #1E1E1E;
+    &__box{
+        margin: 4rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2.4rem 1.6rem;
+    }
+    &__card{
+        border-radius: 16px;
+            border: 1px solid #454545;
+            background: #070707;
+            padding: 4rem 3.2rem;
+            h3{
+                font-size: 3.2rem;
+                font-weight: 700;
+                margin: 1.6rem 0 ;
+                padding: 0 0 1.6rem;
+                border-bottom: 0.1rem solid #454545;
+
+            }
+            p{
+                color: #514F5A;
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin: 0;
+            }
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        border-bottom: 0.1rem solid #f00;
+        padding: 0 0 1.6rem;
+        margin: 0 0 1.6rem;
+        span{
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+    &__year{
+        padding: 0.4rem 1.6rem;
+        border-radius: 100px;
+            background: #454545;
+            font-size: 1.2rem;
+            display: inline-block;
+    }
+    &__performance{
+        margin: 1.6rem 0 0;
+        h4{
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+    &__line{
+        height: 0.3rem;
+        border-radius: 100px;
+        background: #212121;
+            width: 100%;
+            margin: 1.6rem 0 0;
+            span{
+                background-color: #d9d9d9;
+                width: 80%;
+                display: block;
+                height: 0.3rem;
+            }
+    }
+}
+
+.lang{
+    &__box{
+        margin: 5rem 0 0;
+    }
+    &__card{
+        border-radius: 16px;
+            border: 1px solid #454545;
+        padding: 3.2rem 4rem;
+    }
+}
