@@ -1,6 +1,6 @@
 .about {
-  height: 100vh;
-  padding: 4rem 0 0;
+  height: 100%;
+  padding: 4rem 0 20rem;
 
   &__title {
     h1 {
@@ -79,12 +79,12 @@
   &__left {
     position: absolute;
     left: 0;
-    top: 10%;
+    top: 2%;
   }
   &__right {
     position: absolute;
     right: 0;
-    top: 12%;
+    top: 3%;
   }
 }
 

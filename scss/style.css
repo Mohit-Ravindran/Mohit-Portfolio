@@ -42,8 +42,8 @@
 }
 
 .about {
-  height: 100vh;
-  padding: 4rem 0 0;
+  height: 100%;
+  padding: 4rem 0 20rem;
 }
 .about__title h1 {
   text-align: center;
@@ -113,12 +113,12 @@
 .about__left {
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 2%;
 }
 .about__right {
   position: absolute;
   right: 0;
-  top: 12%;
+  top: 3%;
 }
 
 .vision__link {
