@@ -1,0 +1,40 @@
+.project{
+    padding: 4rem 0;
+    &__title{
+        h2{
+            color: #f00;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0 0 1.6rem;
+        }
+        p{
+            color: #F9F9F9;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem 1.6rem;
+        margin: 4rem 0 0;
+    }
+    &__card{
+        h3{
+            color: #F9F9F9;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0 0 0.8rem;
+        }
+        p{
+            color: #514F5A;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    &__content{
+        margin: 1.6rem 0 0;
+    }
+}
