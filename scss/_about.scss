@@ -7,8 +7,8 @@
       text-align: center;
       font-size: 12rem;
       font-weight: 700;
-      -webkit-text-stroke: 0.1rem $white;
-      color: transparent;
+      text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+      color: #000;
     }
   }
 
@@ -110,8 +110,8 @@
       font-size: 6rem;
       font-weight: 700;
       margin: 0 0 1rem;
-      -webkit-text-stroke: 0.1rem $white;
-      color: transparent;
+      text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+      color: #000;
     }
   }
   &__para {
@@ -198,8 +198,8 @@
   h2 {
     font-size: 8rem;
     font-weight: 700;
-    -webkit-text-stroke: 0.1rem $white;
-    color: transparent;
+    color: #454545;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
     white-space: nowrap;
   }
 }
@@ -414,4 +414,171 @@
     padding: 0 0 2.4rem;
     border-bottom: 0.2rem solid #f00;
   }
+}
+
+
+.skill.vision{
+  .vision__content h2{
+    color: #212121;
+
+  }
+}
+
+
+.education ,.hobbies, .advantage {
+  .vision__content h2 {
+    color: #1e1e1e;
+
+  }
+
+}
+
+.contact{
+  &__box{
+    margin: 4rem 0 0;
+  }
+  &__content{
+    p{
+      color: #514F5A;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+  &__social{
+    margin: 8rem 0 0;
+  }
+  &__flex{
+    display: flex;
+    align-items: center;
+    span{
+      font-size: 1.6rem;
+      font-weight: 700;
+
+    }
+    a{
+      color: $white;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+  &__icons{
+    margin: 2.4rem 0 0;
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+
+  &__form{
+    border-radius: 16px;
+      border: 1px solid #454545;
+      background: #070707;
+      padding: 4rem 3.2rem;
+      margin: 0 0 0 10rem;
+
+      form{
+        input{
+          height: 5.6rem;
+        }
+        input, textarea{
+          border-radius: 8px;
+            border: 1px solid #9E9E9E;
+            background: #212121;
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            &:focus{
+              background-color: #212121;
+              box-shadow: none;
+              border-color: #9E9E9E;
+              color: $white;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
+            
+      }
+  }
+  &__btn{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin: 4rem 0 0;
+    button{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: #f00;
+      border-radius: 10rem;
+      border: none;
+
+      padding: 1.6rem 2.4rem;
+
+      span{
+color: $white;
+font-size: 1.6rem;
+font-weight: 500;
+      }
+    }
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 1.6rem;
+    font-weight: 400;
+    color: $white;
+}
+
+.review{
+  &__box{
+    margin: 6rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.7rem;
+  }
+  &__card{
+    border-radius: 16px;
+      border: 1px solid #454545;
+    padding: 3.2rem 4rem;
+  }
+  &__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  &__content{
+    h4{
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin: 0 0 0.8rem;
+    }
+    span{
+      color: #9E9E9E;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+  &__star{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 0 0.8rem;
+  }
+
+  &__para{
+    display: flex;
+    gap: 1.6rem;
+    margin: 2.4rem 0 0;
+    align-items: baseline;
+    p{
+      color: #514F5A;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+
 }

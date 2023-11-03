@@ -49,8 +49,8 @@
   text-align: center;
   font-size: 12rem;
   font-weight: 700;
-  -webkit-text-stroke: 0.1rem #fff;
-  color: transparent;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+  color: #000;
 }
 .about__name {
   display: flex;
@@ -141,8 +141,8 @@
   font-size: 6rem;
   font-weight: 700;
   margin: 0 0 1rem;
-  -webkit-text-stroke: 0.1rem #fff;
-  color: transparent;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+  color: #000;
 }
 .vision__para {
   display: flex;
@@ -224,8 +224,8 @@
 .title h2 {
   font-size: 8rem;
   font-weight: 700;
-  -webkit-text-stroke: 0.1rem #fff;
-  color: transparent;
+  color: #454545;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
   white-space: nowrap;
 }
 
@@ -425,6 +425,144 @@
   margin: 0 0 2.4rem;
   padding: 0 0 2.4rem;
   border-bottom: 0.2rem solid #f00;
+}
+
+.skill.vision .vision__content h2 {
+  color: #212121;
+}
+
+.education .vision__content h2, .hobbies .vision__content h2, .advantage .vision__content h2 {
+  color: #1e1e1e;
+}
+
+.contact__box {
+  margin: 4rem 0 0;
+}
+.contact__content p {
+  color: #514F5A;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.contact__social {
+  margin: 8rem 0 0;
+}
+.contact__flex {
+  display: flex;
+  align-items: center;
+}
+.contact__flex span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.contact__flex a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.contact__icons {
+  margin: 2.4rem 0 0;
+}
+.contact__icons ul {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact__form {
+  border-radius: 16px;
+  border: 1px solid #454545;
+  background: #070707;
+  padding: 4rem 3.2rem;
+  margin: 0 0 0 10rem;
+}
+.contact__form form input {
+  height: 5.6rem;
+}
+.contact__form form input, .contact__form form textarea {
+  border-radius: 8px;
+  border: 1px solid #9E9E9E;
+  background: #212121;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.contact__form form input:focus, .contact__form form textarea:focus {
+  background-color: #212121;
+  box-shadow: none;
+  border-color: #9E9E9E;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.contact__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 4rem 0 0;
+}
+.contact__btn button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f00;
+  border-radius: 10rem;
+  border: none;
+  padding: 1.6rem 2.4rem;
+}
+.contact__btn button span {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.review__box {
+  margin: 6rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.7rem;
+}
+.review__card {
+  border-radius: 16px;
+  border: 1px solid #454545;
+  padding: 3.2rem 4rem;
+}
+.review__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review__content h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem;
+}
+.review__content span {
+  color: #9E9E9E;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.review__star {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 0.8rem;
+}
+.review__para {
+  display: flex;
+  gap: 1.6rem;
+  margin: 2.4rem 0 0;
+  align-items: baseline;
+}
+.review__para p {
+  color: #514F5A;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 * {
