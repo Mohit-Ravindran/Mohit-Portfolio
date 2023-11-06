@@ -15,7 +15,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+a{
+  text-decoration: none;
+}
 body {
   font-family: "Manrope", sans-serif !important;
   color: $white;
