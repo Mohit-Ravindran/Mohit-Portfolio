@@ -61,6 +61,22 @@
   align-items: center;
   gap: 1.6rem;
 }
+.header__nav ul li a.active {
+  color: #fff;
+  position: relative;
+}
+.header__nav ul li a.active::after {
+  position: absolute;
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #f00;
+  filter: blur(2px);
+  bottom: -12px;
+  transform: translate(-50%, -50%);
+  right: 0;
+  left: 50%;
+}
 .header__nav ul li a {
   font-size: 1.2rem;
   font-weight: 700;

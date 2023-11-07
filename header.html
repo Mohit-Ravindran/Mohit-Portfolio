@@ -1,77 +1,87 @@
-<header class="header">
-    <div class="container">
-        <div class="header__flex">
-            <div class="header__logo">
-                <img src="./assets/img/logo.png" alt="">
-            </div>
-            <div class="header__middle">
-                <div class="header__menu">
-                    <div class="header__contact">
-                        <span>Conatct -</span>
-                        <a href="mailto:mohitu61@gmail.com">mohitu61@gmail.com</a>
-                    </div>
-                    <div class="header__social">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href=""><img src="./assets/img/social/facebook.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/instagram.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/whatsapp.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/linkedin.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/telegram.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/skype.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/behance.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./assets/img/social/dribbble.svg" alt=""></a>
-                            </li>
-                        </ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <div class="header__logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="header__middle">
+                    <div class="header__menu">
+                        <div class="header__contact">
+                            <span>Conatct -</span>
+                            <a href="mailto:mohitu61@gmail.com">mohitu61@gmail.com</a>
+                        </div>
+                        <div class="header__social">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href=""><img src="./assets/img/social/facebook.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/instagram.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/whatsapp.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/linkedin.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/telegram.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/skype.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/behance.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/img/social/dribbble.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="header__end">
+                    <img src="./assets/img/menu.svg" alt="">
+                </div>
             </div>
-            <div class="header__end">
-                <img src="./assets/img/menu.svg" alt="">
+            <div class="header__nav">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/"><img src="./assets/img/home.svg" alt=""></a>
+                    </li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="case-studies.html">Case studies</a></li>
+                    <li><a href="ui-ux.html">Design Process</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
             </div>
         </div>
-        <div class="header__nav">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="/"><img src="./assets/img/home.svg" alt=""></a>
-                </li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="case-studies.html">Case studies</a></li>
-                <li><a href="ui-ux.html">Design Process</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
+    </header>
 
-<script>
-    // Get the current URL path
-    var currentPath = window.location.pathname;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            var url = window.location.href;
+            $('.header__nav ul li a').filter(function () {
+                return this.href == url;
+            }).addClass('active');
+        });
+    </script>
 
-    // Select the navigation links
-    var navLinks = document.querySelectorAll('.header__nav ul li a');
 
-    // Loop through the links and add the "active" class to the matching link
-    for (var i = 0; i < navLinks.length; i++) {
-        var link = navLinks[i];
-        if (link.getAttribute('href') === currentPath) {
-            link.parentNode.classList.add('active');
-        } else {
-            link.parentNode.classList.remove('active');
-        }
-    }
-</script>
+</body>
+
+</html>
