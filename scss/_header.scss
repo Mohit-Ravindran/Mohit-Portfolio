@@ -37,6 +37,9 @@
         border-right: 0.1rem solid #ffffff4d;
     }
     &__social{
+        @media #{$xm}{
+            display: none;
+        }
         ul{
             display: flex;
             align-items: center;
@@ -45,6 +48,11 @@
     }
     &__logo{
         padding: 2rem 0;
+        img{
+            @media #{$xs}{
+                width: 13rem;
+            }
+        }
     }
     &__nav{
         position: absolute;
