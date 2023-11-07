@@ -44,7 +44,7 @@
                 content: "";
                 top: 20px;
                 height: 1.6rem;
-                right: -6rem;
+                    right: -6.9rem;
                 width: 1.6rem;
                 background-color: #f00;
                 border-radius: 50%;
@@ -68,6 +68,9 @@
             width: 1px;
             background-color: #f00;
         }
+    }
+    &__top-margin{
+        margin: 0 0 9rem;
     }
 }
 
