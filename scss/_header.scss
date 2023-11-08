@@ -9,9 +9,13 @@
     }
 
     &__end{
-        h4{
+        a{
+            padding: 1rem 2rem;
+            background-color: #f00;
+            color: #fff;
             font-size: 1.4rem;
             font-weight: 500;
+            border-radius: 3rem;
         }
     }
     &__menu{
@@ -32,6 +36,9 @@
         }
     }
     &__middle{
+        @media #{$xss}{
+            display: none;
+        }
         flex: 1;
         border-left: 0.1rem solid #ffffff4d;
         border-right: 0.1rem solid #ffffff4d;

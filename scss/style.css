@@ -8,9 +8,13 @@
   justify-content: space-between;
   gap: 2rem;
 }
-.header__end h4 {
+.header__end a {
+  padding: 1rem 2rem;
+  background-color: #f00;
+  color: #fff;
   font-size: 1.4rem;
   font-weight: 500;
+  border-radius: 3rem;
 }
 .header__menu {
   display: flex;
@@ -31,6 +35,11 @@
   flex: 1;
   border-left: 0.1rem solid rgba(255, 255, 255, 0.3019607843);
   border-right: 0.1rem solid rgba(255, 255, 255, 0.3019607843);
+}
+@media (max-width: 480px) {
+  .header__middle {
+    display: none;
+  }
 }
 @media (max-width: 991px) {
   .header__social {
@@ -94,6 +103,11 @@
   font-weight: 700;
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
   color: #000;
+}
+@media (max-width: 480px) {
+  .about__title h1 {
+    font-size: 4rem;
+  }
 }
 .about__name {
   display: flex;
@@ -186,6 +200,11 @@
   margin: 0 0 1rem;
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
   color: #000;
+}
+@media (max-width: 480px) {
+  .vision__content h2 {
+    font-size: 2.8rem;
+  }
 }
 .vision__para {
   display: flex;
