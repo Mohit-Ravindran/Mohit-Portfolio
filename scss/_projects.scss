@@ -37,4 +37,36 @@
     &__content{
         margin: 1.6rem 0 0;
     }
+    &__tab{
+        margin: 5rem 0 0;
+
+        .nav-pills{
+            .nav-item{
+                button{
+                    &:nth-child(1){
+
+        border-radius: 8px 0px 0px 8px;
+    
+                    }
+                }
+                .nav-link{
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #fff;
+                    padding: 1.2rem 1.6rem;
+                    background: #454545;
+                    border-radius: 0 !important;
+                    border: none;
+                  
+
+
+                }
+                .nav-link.active{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    background-color: #f00;
+                }
+            }
+        }
+    }
 }

@@ -165,6 +165,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.3rem 1.6rem;
+
+    @media #{$xss}{
+    grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__card {
     border-radius: 16px;
@@ -309,6 +313,9 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+    @media #{$xss}{
+      padding: 0;
+    }
   }
 }
 
@@ -319,6 +326,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem 1.6rem;
+
+    @media #{$xss}{
+    grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__card {
     border-radius: 16px;
@@ -464,6 +475,9 @@
   }
   &__social{
     margin: 8rem 0 0;
+    @media #{$xss}{
+      margin: 4rem 0 0;
+    }
   }
   &__flex{
     display: flex;
@@ -495,6 +509,12 @@
       background: #070707;
       padding: 4rem 3.2rem;
       margin: 0 0 0 10rem;
+
+      
+
+      @media #{$xss}{
+        margin: 4rem 0 0;
+      }
 
       form{
         input{

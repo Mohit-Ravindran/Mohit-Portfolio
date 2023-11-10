@@ -253,6 +253,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2.3rem 1.6rem;
 }
+@media (max-width: 480px) {
+  .skill__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .skill__card {
   border-radius: 16px;
   border: 1px solid #454545;
@@ -388,6 +393,11 @@
   flex-direction: column;
   gap: 2.4rem;
 }
+@media (max-width: 480px) {
+  .experience__list {
+    padding: 0;
+  }
+}
 
 .education {
   background: #1e1e1e;
@@ -397,6 +407,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem 1.6rem;
+}
+@media (max-width: 480px) {
+  .education__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .education__card {
   border-radius: 16px;
@@ -525,6 +540,11 @@
 .contact__social {
   margin: 8rem 0 0;
 }
+@media (max-width: 480px) {
+  .contact__social {
+    margin: 4rem 0 0;
+  }
+}
 .contact__flex {
   display: flex;
   align-items: center;
@@ -553,6 +573,11 @@
   background: #070707;
   padding: 4rem 3.2rem;
   margin: 0 0 0 10rem;
+}
+@media (max-width: 480px) {
+  .contact__form {
+    margin: 4rem 0 0;
+  }
 }
 .contact__form form input {
   height: 5.6rem;
@@ -731,6 +756,26 @@
 }
 .project__content {
   margin: 1.6rem 0 0;
+}
+.project__tab {
+  margin: 5rem 0 0;
+}
+.project__tab .nav-pills .nav-item button:nth-child(1) {
+  border-radius: 8px 0px 0px 8px;
+}
+.project__tab .nav-pills .nav-item .nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1.2rem 1.6rem;
+  background: #454545;
+  border-radius: 0 !important;
+  border: none;
+}
+.project__tab .nav-pills .nav-item .nav-link.active {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #f00;
 }
 
 .single {
@@ -958,6 +1003,11 @@ body {
 
 .padding {
   padding: 8rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner {

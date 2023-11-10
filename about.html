@@ -106,7 +106,7 @@
               </p>
 
               <div class="vision__btn ani-up">
-                <a href="">
+                <a href="assets/mohit-resume.pdf">
                   <span>View Resume</span>
                   <img src="./assets/img/view.svg" alt="">
                 </a>
@@ -936,28 +936,35 @@
               </div>
               <div class="contact__icons">
                 <ul class="list-unstyled">
-                  <li class="ani-up">
-                    <a href=""><img src="./assets/img/social/facebook.svg" alt=""></a>
+                  <li>
+                    <a target="_blank" href="https://www.facebook.com/mohit.ravindran?mibextid=ZbWKwL"><img
+                        src="./assets/img/social/facebook.svg" alt=""></a>
                   </li>
-                  <li class="ani-up">
-                    <a href=""><img src="./assets/img/social/instagram.svg" alt=""></a>
+                  <li>
+                    <a target="_blank" href="https://www.instagram.com/mohit.ravindran/?igshid=d2htYmdpNDc0ZWFr"><img
+                        src="./assets/img/social/instagram.svg" alt=""></a>
                   </li>
-                  <li class="ani-up">
+                  <li>
                     <a href=""><img src="./assets/img/social/whatsapp.svg" alt=""></a>
                   </li>
-                  <li class="ani-up">
-                    <a href=""><img src="./assets/img/social/linkedin.svg" alt=""></a>
+                  <li>
+                    <a target="_blank"
+                      href="https://www.linkedin.com/in/mohit-ravindran-4001b41a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                        src="./assets/img/social/linkedin.svg" alt=""></a>
                   </li>
-                  <li class="ani-up">
-                    <a href=""><img src="./assets/img/social/telegram.svg" alt=""></a>
+                  <li>
+                    <a target="_blank" href="https://t.me/MohitRavindran"><img src="./assets/img/social/telegram.svg"
+                        alt=""></a>
                   </li>
-                  <li class="ani-up">
-                    <a href=""><img src="./assets/img/social/skype.svg" alt=""></a>
+                  <li>
+                    <a target="_blank" href="https://join.skype.com/invite/wPzacb57NktO"><img
+                        src="./assets/img/social/skype.svg" alt=""></a>
                   </li>
-                  <li class="ani-up">
-                    <a href=""><img src="./assets/img/social/behance.svg" alt=""></a>
+                  <li>
+                    <a target="_blank" href="https://www.behance.net/mohitu"><img src="./assets/img/social/behance.svg"
+                        alt=""></a>
                   </li>
-                  <li class="ani-up">
+                  <li>
                     <a href=""><img src="./assets/img/social/dribbble.svg" alt=""></a>
                   </li>
                 </ul>
@@ -1042,6 +1049,34 @@
       autoplay: true,
       autoplaySpeed: 3000,
       // centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   </script>
 
