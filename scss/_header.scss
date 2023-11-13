@@ -80,6 +80,7 @@
         transform: translate(-50%,-50%);
         top: 15rem;
         left: 50%;
+        z-index: 2;
         @media #{$xss}{
             top: 10rem;
             display: flex;

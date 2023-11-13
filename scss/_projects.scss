@@ -19,6 +19,10 @@
         grid-template-columns: repeat(3,1fr);
         gap: 4rem 1.6rem;
         margin: 4rem 0 0;
+
+        @media #{$xss}{
+        grid-template-columns: repeat(1, 1fr);
+        }
     }
     &__card{
         h3{
