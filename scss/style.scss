@@ -181,6 +181,9 @@ img{
           display: flex;
             align-items: center;
             gap: 1rem;
+      @media #{$xss}{
+        justify-content: center;
+      }
 
       span{
         min-width: 10rem;
@@ -188,17 +191,33 @@ img{
         height: 0.1rem;
         display: block;
 
+        @media #{$xss}{
+          display: none;
+        }
+
       }
     }
     h3 {
       font-size: 4rem;
       font-weight: 700;
       margin: 0 0 1rem;
+      @media #{$xss}{
+        text-align: center;
+      }
     }
     p {
       font-size: 1.6rem;
       margin: 0 0 2rem;
       font-weight: 400;
+      @media #{$xss}{
+        text-align: center;
+      }
+    }
+    a{
+      @media #{$xss}{
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 

@@ -122,11 +122,13 @@
 .about {
   height: 100%;
   padding: 6rem 0 20rem;
+  position: relative;
 }
 @media (max-width: 480px) {
   .about {
-    height: 100vh;
-    padding: 6rem 0;
+    height: calc(100vh - 50px);
+    padding: 6rem 0 0;
+    overflow: hidden;
   }
 }
 .about__title h1 {
@@ -158,6 +160,11 @@
   font-weight: 700;
   margin: 0;
 }
+@media (max-width: 480px) {
+  .about__name h4 {
+    font-size: 1.6rem;
+  }
+}
 .about__name h4 span {
   color: #eda600;
 }
@@ -169,6 +176,7 @@
 @media (max-width: 480px) {
   .about__content p {
     text-align: center;
+    font-size: 1.2rem;
   }
 }
 .about__flex {
@@ -188,11 +196,21 @@
   font-weight: 400;
   margin: 0;
 }
+@media (max-width: 480px) {
+  .about__count h3 {
+    font-size: 3.2rem;
+  }
+}
 .about__count p {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .about__count p {
+    font-size: 0.8rem;
+  }
 }
 .about__sign {
   position: absolute;
@@ -206,9 +224,11 @@
 }
 @media (max-width: 480px) {
   .about__profile {
-    position: relative;
+    position: absolute;
     transform: unset;
     left: unset;
+    text-align: center;
+    bottom: 0;
   }
 }
 .about__profile-link {
@@ -216,11 +236,22 @@
   right: 0;
   top: 35%;
 }
+@media (max-width: 480px) {
+  .about__profile-link {
+    right: 11%;
+    top: 9%;
+  }
+}
 .about__left {
   position: absolute;
   left: 0;
   top: 2%;
   z-index: -1;
+}
+@media (max-width: 480px) {
+  .about__left {
+    top: 0;
+  }
 }
 .about__right {
   position: absolute;
@@ -228,10 +259,22 @@
   top: 3%;
   z-index: -1;
 }
+@media (max-width: 480px) {
+  .about__right {
+    top: 1%;
+  }
+}
 
 .vision__link {
   display: inline-flex;
   margin: 0 0 2rem;
+}
+@media (max-width: 480px) {
+  .vision__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .vision__link a {
   border-radius: 100px;
@@ -255,6 +298,7 @@
 @media (max-width: 480px) {
   .vision__content h2 {
     font-size: 2.8rem;
+    text-align: center;
   }
 }
 .vision__para {
@@ -263,14 +307,25 @@
   gap: 2rem;
   margin: 4rem 0 0;
 }
+@media (max-width: 480px) {
+  .vision__para img {
+    display: none;
+  }
+}
 .vision__para-content p {
   color: #514f5a;
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
 .vision__btn {
   margin: 4rem 0 0;
+}
+@media (max-width: 480px) {
+  .vision__btn {
+    text-align: center;
+  }
 }
 .vision__btn a {
   display: inline-flex;
@@ -356,6 +411,11 @@
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
   white-space: nowrap;
 }
+@media (max-width: 480px) {
+  .title h2 {
+    font-size: 3.2rem;
+  }
+}
 
 .advantage {
   background: #1e1e1e;
@@ -366,6 +426,11 @@
   align-items: center;
   gap: 1.6rem;
   flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .advantage__box {
+    gap: 0.8rem;
+  }
 }
 .advantage__card {
   border-radius: 10rem;
@@ -380,6 +445,11 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
+}
+@media (max-width: 480px) {
+  .advantage__card p {
+    font-size: 1.2rem;
+  }
 }
 
 .experience__content p {
@@ -523,10 +593,21 @@
   gap: 2.4rem;
   flex-wrap: wrap;
 }
+@media (max-width: 480px) {
+  .lang__box {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .lang__card {
   border-radius: 16px;
   border: 1px solid #454545;
   padding: 3.2rem 4rem;
+}
+@media (max-width: 480px) {
+  .lang__card {
+    padding: 2rem;
+  }
 }
 .lang__card h4 {
   color: #f00;
@@ -549,10 +630,21 @@
   gap: 2.4rem;
   flex-wrap: wrap;
 }
+@media (max-width: 480px) {
+  .hobbies__box {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .hobbies__card {
   border-radius: 16px;
   border: 1px solid #454545;
   padding: 3.2rem 4rem;
+}
+@media (max-width: 480px) {
+  .hobbies__card {
+    padding: 2rem;
+  }
 }
 .hobbies__card h4 {
   font-size: 2.4rem;
@@ -763,6 +855,10 @@
 
 .marquee h2 {
   display: inline-block;
+}
+
+.container.position-relative {
+  position: unset !important;
 }
 
 .project {
@@ -1195,21 +1291,47 @@ img {
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 480px) {
+  .banner__hover-content h5 {
+    justify-content: center;
+  }
+}
 .banner__hover-content h5 span {
   min-width: 10rem;
   background-color: #fff;
   height: 0.1rem;
   display: block;
 }
+@media (max-width: 480px) {
+  .banner__hover-content h5 span {
+    display: none;
+  }
+}
 .banner__hover-content h3 {
   font-size: 4rem;
   font-weight: 700;
   margin: 0 0 1rem;
 }
+@media (max-width: 480px) {
+  .banner__hover-content h3 {
+    text-align: center;
+  }
+}
 .banner__hover-content p {
   font-size: 1.6rem;
   margin: 0 0 2rem;
   font-weight: 400;
+}
+@media (max-width: 480px) {
+  .banner__hover-content p {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .banner__hover-content a {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .banner__hovered {
