@@ -148,9 +148,19 @@
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
   color: #000;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .about__title h1 {
     font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about__title h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .about__title h1 {
+    font-size: 8rem;
   }
 }
 .about__name {
@@ -302,7 +312,7 @@
   display: inline-flex;
   margin: 0 0 2rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .vision__link {
     display: flex;
     align-items: center;
@@ -328,7 +338,7 @@
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
   color: #000;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .vision__content h2 {
     font-size: 2.8rem;
     text-align: center;
@@ -350,7 +360,11 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
-  text-align: center;
+}
+@media (max-width: 480px) {
+  .vision__para-content p {
+    text-align: center;
+  }
 }
 .vision__btn {
   margin: 4rem 0 0;
@@ -388,6 +402,11 @@
 @media (max-width: 480px) {
   .skill__box {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .skill__box {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .skill__card {
@@ -555,7 +574,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem 1.6rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .education__box {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -743,7 +762,7 @@
   padding: 4rem 3.2rem;
   margin: 0 0 0 10rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .contact__form {
     margin: 4rem 0 0;
   }

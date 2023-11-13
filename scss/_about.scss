@@ -17,9 +17,15 @@
       text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
       color: #000;
 
-      @media #{$xss}{
+      @media #{$xm}{
         font-size: 4rem;
       }
+            @media #{$lg} {
+              font-size: 6rem;
+            }
+                                                @media #{$lp} {
+                                                  font-size: 8rem;
+                                                }
     }
   }
 
@@ -166,7 +172,7 @@
   &__link {
     display: inline-flex;
     margin: 0 0 2rem;
-    @media #{$xss}{
+    @media #{$xs  }{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -192,7 +198,7 @@
       text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
       color: #000;
 
-      @media #{$xss}{
+      @media #{$xs}{
         font-size: 2.8rem;
         text-align: center;
       }
@@ -217,7 +223,9 @@
       font-size: 1.6rem;
       font-weight: 400;
       margin: 0;
-      text-align: center;
+        @media #{$xss} {
+            text-align: center;
+          }
     }
   }
   &__btn {
@@ -255,6 +263,9 @@
     @media #{$xss}{
     grid-template-columns: repeat(1, 1fr);
     }
+        @media #{$sm} {
+          grid-template-columns: repeat(2, 1fr);
+        }
   }
   &__card {
     border-radius: 16px;
@@ -424,7 +435,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem 1.6rem;
 
-    @media #{$xss}{
+    @media #{$xs}{
     grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -624,7 +635,7 @@
 
       
 
-      @media #{$xss}{
+      @media #{$xm}{
         margin: 4rem 0 0;
       }
 
