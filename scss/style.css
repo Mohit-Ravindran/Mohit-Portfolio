@@ -16,10 +16,20 @@
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 480px) {
+  .header__end a {
+    padding: 1.5rem;
+  }
+}
 .header__end a span {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  .header__end a span {
+    font-size: 1.2rem;
+  }
 }
 .header__menu {
   display: flex;
@@ -72,6 +82,15 @@
   top: 15rem;
   left: 50%;
 }
+@media (max-width: 480px) {
+  .header__nav {
+    top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .header__nav ul {
   display: flex;
   align-items: center;
@@ -104,6 +123,12 @@
   height: 100%;
   padding: 6rem 0 20rem;
 }
+@media (max-width: 480px) {
+  .about {
+    height: 100vh;
+    padding: 6rem 0;
+  }
+}
 .about__title h1 {
   text-align: center;
   font-size: 12rem;
@@ -123,6 +148,11 @@
   margin: 0 0 0.8rem;
   padding: 4rem 0 0;
 }
+@media (max-width: 480px) {
+  .about__name {
+    justify-content: center;
+  }
+}
 .about__name h4 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -135,6 +165,11 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
+}
+@media (max-width: 480px) {
+  .about__content p {
+    text-align: center;
+  }
 }
 .about__flex {
   padding: 4rem 0 0;
@@ -169,6 +204,13 @@
   transform: translate(-50%, -50%);
   left: 50%;
 }
+@media (max-width: 480px) {
+  .about__profile {
+    position: relative;
+    transform: unset;
+    left: unset;
+  }
+}
 .about__profile-link {
   position: absolute;
   right: 0;
@@ -178,11 +220,13 @@
   position: absolute;
   left: 0;
   top: 2%;
+  z-index: -1;
 }
 .about__right {
   position: absolute;
   right: 0;
   top: 3%;
+  z-index: -1;
 }
 
 .vision__link {
@@ -1017,11 +1061,23 @@ img {
   display: flex;
   gap: 1rem;
 }
+@media (max-width: 480px) {
+  .banner ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .banner ul li.initial-50 {
   width: 60%;
 }
 .banner ul li.active {
   width: 49%;
+}
+@media (max-width: 480px) {
+  .banner ul li.active {
+    width: 100%;
+    height: 100%;
+  }
 }
 .banner ul li.active::after {
   opacity: 0 !important;
@@ -1105,6 +1161,12 @@ img {
   opacity: 0.75;
   transition: all 0.35s ease-in-out;
 }
+@media (max-width: 480px) {
+  .banner ul li {
+    width: 100%;
+    height: 10rem;
+  }
+}
 .banner ul li::before {
   position: absolute;
   left: 0;
@@ -1149,6 +1211,12 @@ img {
   margin: 0 0 2rem;
   font-weight: 400;
 }
+@media (max-width: 480px) {
+  .banner__hovered {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .banner__hovered h4 {
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
@@ -1159,6 +1227,12 @@ img {
   position: relative;
   z-index: 1;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  .banner__hovered h4 {
+    -ms-writing-mode: unset;
+        writing-mode: unset;
+  }
 }
 .banner__hovered h3 {
   position: absolute;
