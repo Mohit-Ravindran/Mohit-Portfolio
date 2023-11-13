@@ -64,6 +64,11 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    @media #{$xss}{
+      padding: 2rem 0 0;
+      justify-content: center;
+    }
   }
 
   &__count {
@@ -94,11 +99,27 @@
     position: absolute;
     right: 0;
     bottom: 5rem;
+
+    @media #{$xss}{
+      text-align: end;
+      right: 1rem;
+    }
+    img {
+        @media #{$xss} {
+          width: 40%;
+        }
+      }
+
   }
   &__profile {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
+    img{
+      @media #{$xss}{
+        width: 40%;
+      }
+    }
 
 
     @media #{$xss}{
@@ -107,6 +128,8 @@
       left: unset;
       text-align: center;
       bottom: 0;
+      width: 100%;
+
     }
   }
   &__profile-link {
@@ -115,8 +138,8 @@
     top: 35%;
 
     @media #{$xss}{
-      right: 11%;
-        top: 9%;
+      right: 15%;
+        top: 16%;
     }
   }
   &__left {
@@ -747,6 +770,10 @@ font-weight: 500;
   height: 4rem !important;
   background-repeat: no-repeat !important;
 
+  @media #{$xss}{
+    right: 2rem !important;
+  }
+
   &::before {
     content: unset !important;
   }
@@ -768,3 +795,7 @@ font-weight: 500;
 .container.position-relative{
   position: unset !important;
 }
+
+// .slick-initialized {
+//   overflow: hidden;
+// }

@@ -1,5 +1,5 @@
 .process{
-    padding: 4rem 0;
+    padding: 10rem 0 4rem;
     @media #{$xss}{
         padding: 8rem 0 4rem;
     }
@@ -22,9 +22,12 @@
             text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
             color: #000;
 
-            @media #{$xss}{
+            @media #{$xs}{
                 font-size: 3.2rem;
             }
+                        @media #{$lg} {
+                            font-size: 3.2rem;
+                        }
         }
         p{
             color: #514F5A;

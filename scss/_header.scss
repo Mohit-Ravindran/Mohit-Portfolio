@@ -50,7 +50,7 @@
         }
     }
     &__middle{
-        @media #{$xss}{
+        @media #{$xs}{
             display: none;
         }
         flex: 1;
@@ -81,6 +81,13 @@
         top: 15rem;
         left: 50%;
         z-index: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media #{$sm}{
+            top: 10rem;
+        }
         @media #{$xss}{
             top: 10rem;
             display: flex;
@@ -104,7 +111,7 @@
                         height: 0.6rem;
                         background-color: #f00;
                         filter: blur(2px);
-                            bottom: -12px;
+                            bottom: -16px;
                                 transform: translate(-50%, -50%);
                                 right: 0;
                                 left: 50%;
