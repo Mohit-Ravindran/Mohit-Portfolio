@@ -116,6 +116,9 @@ color: #f00;
             font-weight: 500;
                 color: $white;
                 border-radius: 3rem;
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
             
             &:nth-child(1){
                 background-color: transparent;
@@ -135,6 +138,21 @@ color: #f00;
         right: 8rem;
         text-align: end;
         z-index: 2;
+    }
+    &__img{
+        background-image: url(../assets/img/project/bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+
+    }
+    &__left-img{
+        text-align: end;
+    }
+    &__flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 
 }
