@@ -238,7 +238,7 @@
 }
 .about__sign {
   position: absolute;
-  right: 2rem;
+  right: 5%;
   bottom: 5rem;
 }
 @media (max-width: 480px) {
@@ -1158,6 +1158,13 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100%;
+  position: relative;
+}
+.single__img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 .single__left-img {
   text-align: end;
