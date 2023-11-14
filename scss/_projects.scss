@@ -49,7 +49,7 @@
 
         .nav-pills{
                 flex-wrap: nowrap;
-                    overflow: scroll;
+                    overflow: auto;
             .nav-item{
                 button{
                     &:nth-child(1){

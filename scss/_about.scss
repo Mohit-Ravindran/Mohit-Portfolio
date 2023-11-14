@@ -3,9 +3,7 @@
   padding: 6rem 0 20rem;
   position: relative;
 
-  @media #{$xss}{
-    height: calc(100vh - 50px);
-    padding:6rem 0 0 ;
+  @media #{$xss} {
     overflow: hidden;
   }
 
@@ -14,18 +12,19 @@
       text-align: center;
       font-size: 12rem;
       font-weight: 700;
-      text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+      text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+        -1px -1px 0 #fff;
       color: #000;
 
-      @media #{$xm}{
+      @media #{$xm} {
         font-size: 4rem;
       }
-            @media #{$lg} {
-              font-size: 6rem;
-            }
-                                                @media #{$lp} {
-                                                  font-size: 8rem;
-                                                }
+      @media #{$lg} {
+        font-size: 6rem;
+      }
+      @media #{$lp} {
+        font-size: 8rem;
+      }
     }
   }
 
@@ -36,7 +35,7 @@
     margin: 0 0 0.8rem;
     padding: 4rem 0 0;
 
-    @media #{$xss}{
+    @media #{$xss} {
       justify-content: center;
     }
 
@@ -44,7 +43,7 @@
       font-size: 2.4rem;
       font-weight: 700;
       margin: 0;
-      @media #{$xss}{
+      @media #{$xss} {
         font-size: 1.6rem;
       }
       span {
@@ -59,9 +58,9 @@
       font-weight: 400;
       margin: 0;
       @media #{$xss} {
-          text-align: center;
-          font-size: 1.2rem;
-        }
+        text-align: center;
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -71,7 +70,7 @@
     align-items: center;
     gap: 3rem;
 
-    @media #{$xss}{
+    @media #{$xss} {
       padding: 2rem 0 0;
       justify-content: center;
     }
@@ -86,7 +85,7 @@
       font-size: 4.8rem;
       font-weight: 400;
       margin: 0;
-      @media #{$xss}{
+      @media #{$xss} {
         font-size: 3.2rem;
       }
     }
@@ -96,46 +95,43 @@
       font-weight: 400;
       text-transform: uppercase;
 
-      @media #{$xss}{
+      @media #{$xss} {
         font-size: 0.8rem;
       }
     }
   }
   &__sign {
     position: absolute;
-    right: 0;
+    right: 2rem;
     bottom: 5rem;
 
-    @media #{$xss}{
+    @media #{$xss} {
       text-align: end;
       right: 1rem;
     }
     img {
-        @media #{$xss} {
-          width: 40%;
-        }
+      @media #{$xss} {
+        width: 40%;
       }
-
+    }
   }
   &__profile {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    img{
-      @media #{$xss}{
+    img {
+      @media #{$xss} {
         width: 40%;
       }
     }
 
-
-    @media #{$xss}{
+    @media #{$xss} {
       position: absolute;
       transform: unset;
       left: unset;
       text-align: center;
       bottom: 0;
       width: 100%;
-
     }
   }
   &__profile-link {
@@ -143,9 +139,9 @@
     right: 0;
     top: 35%;
 
-    @media #{$xss}{
+    @media #{$xss} {
       right: 15%;
-        top: 16%;
+      top: 16%;
     }
   }
   &__left {
@@ -153,7 +149,7 @@
     left: 0;
     top: 2%;
     z-index: -1;
-    @media #{$xss}{
+    @media #{$xss} {
       top: 0;
     }
   }
@@ -163,8 +159,8 @@
     top: 3%;
     z-index: -1;
     @media #{$xss} {
-        top: 1%;
-      }
+      top: 1%;
+    }
   }
 }
 
@@ -172,7 +168,7 @@
   &__link {
     display: inline-flex;
     margin: 0 0 2rem;
-    @media #{$xs  }{
+    @media #{$xs  } {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -195,10 +191,11 @@
       font-size: 6rem;
       font-weight: 700;
       margin: 0 0 1rem;
-      text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+      text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+        -1px -1px 0 #fff;
       color: #000;
 
-      @media #{$xs}{
+      @media #{$xs} {
         font-size: 2.8rem;
         text-align: center;
       }
@@ -210,8 +207,8 @@
     gap: 2rem;
     margin: 4rem 0 0;
 
-    @media #{$xss}{
-      img{
+    @media #{$xss} {
+      img {
         display: none;
       }
     }
@@ -223,14 +220,14 @@
       font-size: 1.6rem;
       font-weight: 400;
       margin: 0;
-        @media #{$xss} {
-            text-align: center;
-          }
+      @media #{$xss} {
+        text-align: center;
+      }
     }
   }
   &__btn {
     margin: 4rem 0 0;
-    @media #{$xss}{
+    @media #{$xss} {
       text-align: center;
     }
     a {
@@ -260,12 +257,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.3rem 1.6rem;
 
-    @media #{$xss}{
-    grid-template-columns: repeat(1, 1fr);
+    @media #{$xss} {
+      grid-template-columns: repeat(1, 1fr);
     }
-        @media #{$sm} {
-          grid-template-columns: repeat(2, 1fr);
-        }
+    @media #{$sm} {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   &__card {
     border-radius: 16px;
@@ -295,18 +292,18 @@
     height: 0.4rem;
     left: 2rem;
   }
-  &__95{
+  &__95 {
     width: 75%;
   }
-  &__40{
+  &__40 {
     width: 30%;
   }
-  &__80{
+  &__80 {
     width: 60%;
   }
-    &__70 {
-      width: 50%;
-    }
+  &__70 {
+    width: 50%;
+  }
 }
 
 .title {
@@ -318,10 +315,11 @@
     font-size: 8rem;
     font-weight: 700;
     color: #454545;
-    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+      -1px -1px 0 #fff;
     white-space: nowrap;
 
-    @media #{$xss}{
+    @media #{$xss} {
       font-size: 3.2rem;
     }
   }
@@ -335,7 +333,7 @@
     align-items: center;
     gap: 1.6rem;
     flex-wrap: wrap;
-    @media #{$xss}{
+    @media #{$xss} {
       gap: 0.8rem;
     }
   }
@@ -354,7 +352,7 @@
       font-weight: 400;
       margin: 0;
 
-      @media #{$xss}{
+      @media #{$xss} {
         font-size: 1.2rem;
       }
     }
@@ -421,7 +419,7 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    @media #{$xss}{
+    @media #{$xss} {
       padding: 0;
     }
   }
@@ -435,8 +433,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem 1.6rem;
 
-    @media #{$xs}{
-    grid-template-columns: repeat(1, 1fr);
+    @media #{$xs} {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   &__card {
@@ -506,7 +504,7 @@
     display: flex;
     gap: 2.4rem;
     flex-wrap: wrap;
-    @media #{$xss}{
+    @media #{$xss} {
       align-items: center;
       justify-content: center;
     }
@@ -516,7 +514,7 @@
     border: 1px solid #454545;
     padding: 3.2rem 4rem;
 
-    @media #{$xss}{
+    @media #{$xss} {
       padding: 2rem;
     }
 
@@ -542,133 +540,131 @@
     display: flex;
     gap: 2.4rem;
     flex-wrap: wrap;
-    @media #{$xss}{
+    @media #{$xss} {
       align-items: center;
       justify-content: center;
+    }
+
+    @media #{$lp} {
+      gap: 1.4rem;
     }
   }
   &__card {
     border-radius: 16px;
     border: 1px solid #454545;
     padding: 3.2rem 4rem;
-    @media #{$xss}{
+    @media #{$xss} {
       padding: 2rem;
     }
 
-    h4{
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin: 0;
+    h4 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin: 0;
     }
   }
-  &__img{
+  &__img {
     margin: 0 0 2.4rem;
     padding: 0 0 2.4rem;
     border-bottom: 0.2rem solid #f00;
   }
 }
 
-
-.skill.vision{
-  .vision__content h2{
+.skill.vision {
+  .vision__content h2 {
     color: #212121;
-
   }
 }
 
-
-.education ,.hobbies, .advantage {
+.education,
+.hobbies,
+.advantage {
   .vision__content h2 {
     color: #1e1e1e;
-
   }
-
 }
 
-.contact{
-  &__box{
+.contact {
+  &__box {
     margin: 4rem 0 0;
   }
-  &__content{
-    p{
-      color: #514F5A;
+  &__content {
+    p {
+      color: #514f5a;
       font-size: 1.6rem;
       font-weight: 400;
     }
   }
-  &__social{
+  &__social {
     margin: 8rem 0 0;
-    @media #{$xss}{
+    @media #{$xss} {
       margin: 4rem 0 0;
     }
   }
-  &__flex{
+  &__flex {
     display: flex;
     align-items: center;
-    span{
+    span {
       font-size: 1.6rem;
       font-weight: 700;
-
     }
-    a{
+    a {
       color: $white;
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 400;
     }
   }
-  &__icons{
+  &__icons {
     margin: 2.4rem 0 0;
-    ul{
+    ul {
       display: flex;
       align-items: center;
       gap: 0.8rem;
     }
   }
 
-  &__form{
+  &__form {
     border-radius: 16px;
-      border: 1px solid #454545;
-      background: #070707;
-      padding: 4rem 3.2rem;
-      margin: 0 0 0 10rem;
+    border: 1px solid #454545;
+    background: #070707;
+    padding: 4rem 3.2rem;
+    margin: 0 0 0 10rem;
 
-      
+    @media #{$xm} {
+      margin: 4rem 0 0;
+    }
 
-      @media #{$xm}{
-        margin: 4rem 0 0;
+    form {
+      input {
+        height: 5.6rem;
       }
+      input,
+      textarea {
+        border-radius: 8px;
+        border: 1px solid #9e9e9e;
+        background: #212121;
+        color: $white;
+        font-size: 1.4rem;
+        font-weight: 600;
 
-      form{
-        input{
-          height: 5.6rem;
+        &:focus {
+          background-color: #212121;
+          box-shadow: none;
+          border-color: #9e9e9e;
+          color: $white;
+          font-size: 1.4rem;
+          font-weight: 600;
         }
-        input, textarea{
-          border-radius: 8px;
-            border: 1px solid #9E9E9E;
-            background: #212121;
-            color: $white;
-            font-size: 1.4rem;
-            font-weight: 600;
-
-            &:focus{
-              background-color: #212121;
-              box-shadow: none;
-              border-color: #9E9E9E;
-              color: $white;
-                font-size: 1.4rem;
-                font-weight: 600;
-            }
-        }
-            
       }
+    }
   }
-  &__btn{
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   margin: 4rem 0 0;
-    button{
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 4rem 0 0;
+    button {
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -678,10 +674,10 @@
 
       padding: 1.6rem 2.4rem;
 
-      span{
-color: $white;
-font-size: 1.6rem;
-font-weight: 500;
+      span {
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 500;
       }
     }
   }
@@ -689,63 +685,61 @@ font-weight: 500;
 
 .form-control::-webkit-input-placeholder {
   font-size: 1.6rem;
-    font-weight: 400;
-    color: $white;
+  font-weight: 400;
+  color: $white;
 }
 
-.review{
-  &__box{
+.review {
+  &__box {
     margin: 6rem 0 0;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.7rem;
   }
-  &__card{
+  &__card {
     border-radius: 16px;
-      border: 1px solid #454545;
+    border: 1px solid #454545;
     padding: 3.2rem 4rem;
     min-height: 30rem !important;
   }
-  &__flex{
+  &__flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
   }
-  &__content{
-    h4{
+  &__content {
+    h4 {
       font-size: 2.4rem;
       font-weight: 700;
       margin: 0 0 0.8rem;
     }
-    span{
-      color: #9E9E9E;
+    span {
+      color: #9e9e9e;
       font-size: 1.6rem;
       font-weight: 400;
     }
   }
-  &__star{
+  &__star {
     display: flex;
     align-items: center;
     gap: 0.8rem;
     margin: 0 0 0.8rem;
   }
 
-  &__para{
+  &__para {
     display: flex;
     gap: 1.6rem;
     margin: 2.4rem 0 0;
     align-items: baseline;
-    p{
-      color: #514F5A;
+    p {
+      color: #514f5a;
       font-size: 1.6rem;
       font-weight: 400;
     }
   }
-  &__box{
+  &__box {
     margin: 6rem 0 0;
   }
-
 }
 
 .slick-slider {
@@ -757,10 +751,10 @@ font-weight: 500;
   margin-left: 15px;
 }
 .slick-prev,
-.slick-next{
+.slick-next {
   top: 110% !important;
 }
-.slick-prev{
+.slick-prev {
   background-image: url(../assets/img/prev.svg) !important;
   transform: unset !important;
   right: 6rem !important;
@@ -769,7 +763,7 @@ font-weight: 500;
   background-repeat: no-repeat !important;
   left: unset !important;
 
-  &::before{
+  &::before {
     content: unset !important;
   }
 }
@@ -781,7 +775,7 @@ font-weight: 500;
   height: 4rem !important;
   background-repeat: no-repeat !important;
 
-  @media #{$xss}{
+  @media #{$xss} {
     right: 2rem !important;
   }
 
@@ -803,7 +797,7 @@ font-weight: 500;
   display: inline-block;
 }
 
-.container.position-relative{
+.container.position-relative {
   position: unset !important;
 }
 
