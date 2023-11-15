@@ -930,6 +930,11 @@
 .project {
   padding: 8rem 0 4rem;
 }
+
+.project__card img {
+  border-radius: 1em;
+}
+
 .project__title h2 {
   color: #f00;
   font-size: 3.2rem;
@@ -1154,12 +1159,17 @@
   z-index: 2;
 }
 
+.single__img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .single__img img {
   position: absolute;
-  right: 0;
   bottom: 0;
   z-index: 1;
-  
+  border-radius: 2em;
 }
 .single__left-img {
   text-align: end;
