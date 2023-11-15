@@ -19,5 +19,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Redirect to a thank you page or display a thank you message.
     header("Location: thank_you.html");
     exit();
+
+    $success = mail($to, $subject, $mailBody, $headers);
+
+    if ($success) {
+        header("Location: thank_you.html");
+        exit();
+    } else {
+        echo "Error sending email. Check your server configuration.";
+    }
 }
 ?>
+
