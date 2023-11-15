@@ -2,10 +2,7 @@
   height: 100%;
   padding: 6rem 0 20rem;
   position: relative;
-
-  @media #{$xss} {
-    overflow: hidden;
-  }
+  overflow: hidden;
 
   &__title {
     h1 {
@@ -102,12 +99,13 @@
   }
   &__sign {
     position: absolute;
-    right: 5%;
-    bottom: 5rem;
+    right: 2%;
+      bottom: 3%;
 
     @media #{$xss} {
       text-align: end;
       right: 1rem;
+      bottom: 1rem;
     }
     img {
       @media #{$xss} {
@@ -116,21 +114,22 @@
     }
   }
   &__profile {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
+      position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     img {
       @media #{$xm} {
-        width: 40%;
+        width: 70%;
       }
     }
 
     @media #{$xm} {
       position: absolute;
-      transform: unset;
-      left: unset;
-      text-align: center;
-      bottom: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
   }
   &__profile-link {
@@ -138,8 +137,13 @@
     right: 0;
     top: 35%;
 
-    @media #{$xss} {
-      right: 15%;
+    img{
+      @media #{$xm}{
+        width: 70%;
+      }
+    }
+
+    @media #{$xm} {
       top: 16%;
     }
   }
