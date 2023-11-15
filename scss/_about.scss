@@ -369,6 +369,10 @@
       font-weight: 400;
       color: #514f5a;
       margin: 0;
+
+      @media #{$xss}{
+        text-align: center;
+      }
     }
   }
   &__img {
@@ -382,6 +386,10 @@
     border-radius: 16px;
     border: 1px solid #454545;
     background: #070707;
+
+    @media #{$xss}{
+      padding: 1.2rem;
+    }
 
     p {
       font-size: 1.6rem;
@@ -404,6 +412,9 @@
       font-size: 3.2rem;
       font-weight: 700;
       margin: 0;
+      @media #{$xss}{
+        font-size: 2.8rem;
+      }
     }
     img {
       display: block;
@@ -451,6 +462,9 @@
       margin: 1.6rem 0;
       padding: 0 0 1.6rem;
       border-bottom: 0.1rem solid #454545;
+          @media #{$xss} {
+            font-size: 2.8rem;
+          }
     }
     p {
       color: #514f5a;
@@ -519,6 +533,7 @@
 
     @media #{$xss} {
       padding: 2rem;
+      min-width: 16rem;
     }
 
     h4 {
@@ -526,12 +541,20 @@
       font-size: 4rem;
       font-weight: 400;
       margin: 0 0 0.5rem;
+          @media #{$xss} {
+            font-size: 2rem;
+            text-align: center;
+          }
     }
 
     p {
       font-size: 2.4rem;
       font-weight: 700;
       margin: 0;
+          @media #{$xss} {
+            font-size: 1.8rem;
+            text-align: center;
+          }
     }
   }
 }
@@ -558,12 +581,16 @@
     padding: 3.2rem 4rem;
     @media #{$xss} {
       padding: 2rem;
+      min-width: 15rem;
     }
 
     h4 {
       font-size: 2.4rem;
       font-weight: 700;
       margin: 0;
+          @media #{$xss} {
+            font-size: 1.8rem;
+          }
     }
   }
   &__img {
@@ -596,6 +623,9 @@
       color: #514f5a;
       font-size: 1.6rem;
       font-weight: 400;
+          @media #{$xss} {
+            font-size: 1.4rem;
+          }
     }
   }
   &__social {
@@ -650,6 +680,7 @@
         color: $white;
         font-size: 1.4rem;
         font-weight: 600;
+        padding: 1rem 1.8rem;
 
         &:focus {
           background-color: #212121;
@@ -674,8 +705,12 @@
       background-color: #f00;
       border-radius: 10rem;
       border: none;
-
       padding: 1.6rem 2.4rem;
+
+          @media #{$xss} {
+            width: 100%;
+            justify-content: center;
+          }
 
       span {
         color: $white;
