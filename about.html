@@ -920,7 +920,7 @@
           </a>
         </div>
         <h2 class="ani-up">
-          Hire Me !
+          Lets Work Together !
         </h2>
       </div>
 
@@ -992,38 +992,37 @@
             </div>
           </div>
           <div class="col-xl-8 col-lg-8 col-md-12">
-            <div class="contact__form">
-              <form class="ani-up">
+            <div class="contact__form" >
+              <form class="ani-up" action="process_form.php" method="post">
                 <div class="row g-4">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="Name *">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Name *" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input type="email" class="form-control" placeholder="Email *">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="Contact Number *">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="contact_number" placeholder="Contact Number *" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message *"
-                        rows="12"></textarea>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <textarea class="form-control" name="message" placeholder="Your Message *" rows="12" required></textarea>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="contact__btn">
-                  <button type="submit" class="btn btn-primary">
-                    <img src="./assets/img/send.svg" alt="">
-                    <span>Submit</span>
-                  </button>
+                    <button type="submit" class="btn btn-primary">
+                        <img src="./assets/img/send.svg" alt="">
+                        <span>Submit</span>
+                    </button>
                 </div>
-              </form>
+            </form>
             </div>
           </div>
         </div>
