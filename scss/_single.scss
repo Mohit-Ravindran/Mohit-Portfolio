@@ -16,6 +16,9 @@
     }
     &__title{
         margin: 8rem 0 0;
+        @media #{$xss} {
+                text-align: center;
+            }
         @media #{$xm}{
             margin: 2rem 0 0;
         }
@@ -26,7 +29,8 @@
             color: #f00;
 
             @media #{$xss}{
-                font-size: 2.8rem;
+                font-size: 2.4rem;
+                text-align: center;
             }
         }
         p{
@@ -34,6 +38,9 @@
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0 0 2.4rem;
+            @media #{$xss} {
+                    text-align: center;
+                }
         }
     }
 
@@ -44,16 +51,25 @@ color: #f00;
     font-size: 1.6rem;
     font-weight: 700;
     margin: 0 0 0.8rem;
+    @media #{$xss} {
+            text-align: center;
+        }
     
         }
         p{
             font-size: 1.4rem;
             font-weight: 400;
+            @media #{$xss} {
+                    text-align: center;
+                }
         }
                 ul {
                     display: flex;
                     align-items: center;
                     gap: 1.6rem;
+                    @media #{$xss} {
+                            justify-content: center;
+                        }
         
                     li {
                         border-radius: 8px;
@@ -81,6 +97,7 @@ color: #f00;
 
                 @media #{$xss}{
                     font-size: 3.2rem;
+                    text-align: center;
                 }
         }
 
@@ -89,6 +106,9 @@ color: #f00;
             font-weight: 400;
             margin: 0;
             color: #514F5A;
+            @media #{$xss} {
+                    text-align: center;
+                }
             span{
                 font-size: 1.6rem;
                 font-weight: 700;
@@ -100,6 +120,9 @@ color: #f00;
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0 0 2.4rem;
+            @media #{$xss} {
+                    text-align: center;
+                }
         }
         ul{
             display: flex;
@@ -114,6 +137,9 @@ color: #f00;
         display: flex;
         align-items: center;
         gap: 2.4rem;
+        @media #{$xss} {
+                justify-content: center;
+            }
         button{
             padding: 1.6rem 2.4rem;
             font-size: 1.6rem;
@@ -148,8 +174,11 @@ color: #f00;
         z-index: 2;
 
         @media #{$xss}{
-            right: 1%;
-            bottom: 1%;
+                right: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 1%;
+                    text-align: center;
         }
     }
     &__img{
@@ -170,6 +199,9 @@ color: #f00;
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
+        @media #{$xss} {
+                justify-content: center;
+            }
     }
 
 }

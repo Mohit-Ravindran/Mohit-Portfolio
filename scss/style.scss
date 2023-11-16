@@ -268,3 +268,211 @@ img{
   }
 }
 
+
+
+.password-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  .popup-content {
+      background-color: #070707;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #FF0000;
+      width: 80%;
+      color: #FFFFFF;
+      border-radius: 10px;
+    }
+  
+    .close {
+      color: #FFFFFF;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  
+    .close:hover,
+    .close:focus {
+      color: #FF0000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    label {
+      color: #FFFFFF;
+    }
+  
+    input {
+      background-color: #070707;
+      border: 1px solid #FF0000;
+      color: #FFFFFF;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 100px;
+      width: 100%;
+      height: 5.2rem;
+    }
+  
+    button {
+      background-color: #FF0000;
+      color: #FFFFFF;
+      border: none;
+      padding: 18px 20px;
+      border-radius: 100px;
+      cursor: pointer;
+      width: 100%;
+      margin: 3rem 0 0;
+    }
+}
+
+
+.thank-you-card {
+  background-image: url('/assets/img/thank-you-page/bg.png');
+  /* Replace with the actual path to your image */
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 4em 1em;
+  /* Adjust the padding as needed */
+  color: #fff;
+  /* Set text color to white or any desired color */
+}
+
+.thank-you-card h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0.5em;
+
+}
+
+.thank-you-card p {
+  color: #9E9E9E;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.banner__hovered h4 {
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin: 6rem auto 0;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+}
+.banner__hovered h3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 8rem;
+  font-weight: 500;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .banner__hovered h3 {
+    position: unset;
+    transform: unset;
+    margin-left: 0.2em;
+  }
+}
+@media (max-width: 767px) {
+  .banner__hovered h4 {
+    font-size: 1.5rem;
+    -ms-writing-mode: unset;
+    writing-mode: unset;
+    margin: unset;
+    flex: 1;
+
+  }
+}
+
+.project__card img {
+  border-radius: 1.5rem;
+}
+
+.single__img img {
+  border-radius: 2em;
+}
+.banner ul li {
+  border-radius: 2rem;
+  background-blend-mode: overlay;
+  width: 18%;
+  height: 85vh;
+  background-size: cover;
+  transition: all 100ms ease-in-out;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.process__img.mobile-none{
+
+  @media #{$xm}{
+    display: none;
+  }
+
+}
+
+.password{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+
+  &__content{
+    margin: 0 auto;
+      max-width: 480px;
+      border-radius: 40px;
+      background: #070707;
+      padding: 3rem;
+      position: relative;
+
+      h4{
+        color: #f00;
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 0 0 3.2rem;
+        text-align: center;
+      }
+
+      p{
+        color: #514F5A;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0 0 3.2rem;
+        text-align: center;
+        span{
+          color: #fff;
+
+        }
+
+      }
+
+  }
+  &__close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+}

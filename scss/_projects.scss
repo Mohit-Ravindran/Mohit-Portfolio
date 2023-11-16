@@ -6,12 +6,19 @@
             font-size: 3.2rem;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xss}{
+                text-align: center;
+            }
         }
         p{
             color: #F9F9F9;
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0;
+            @media #{$xss} {
+                    text-align: center;
+                }
         }
     }
     &__box{
@@ -33,12 +40,19 @@
             font-size: 3.2rem;
             font-weight: 700;
             margin: 0 0 0.8rem;
+            @media #{$xss} {
+                    text-align: center;
+                }
+                
         }
         p{
             color: #514F5A;
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0;
+            @media #{$xss} {
+                    text-align: center;
+                }
         }
     }
     &__content{
