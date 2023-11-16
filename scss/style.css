@@ -1600,7 +1600,7 @@ img {
   display: none;
 }
 .banner ul li {
-  border-radius: 3rem;
+  border-radius: 2rem;
   background-blend-mode: overlay;
   width: 17%;
   height: 90vh;
@@ -1636,7 +1636,7 @@ img {
   content: "";
   height: 100%;
   width: 100%;
-  border-radius: 32px;
+  border-radius: 0.5em;
   background: linear-gradient(180deg, rgba(195, 139, 98, 0.7) 0%, rgba(206, 132, 87, 0.7) 100%);
   opacity: 0.75;
   transition: all 0.35s ease-in-out;
