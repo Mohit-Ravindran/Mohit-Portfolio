@@ -1261,11 +1261,75 @@ button {
 }
 /* Enter Password css end*/
 
+/* Thank you page start*/
+.thank-you-card {
+  background-image: url('/assets/img/thank-you-page/bg.png'); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 4em 0; /* Adjust the padding as needed */
+  color: #fff; /* Set text color to white or any desired color */
+}
+
+.thank-you-card h2 {
+  color: #FFF;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+margin-top: 0.5em;
+
+}
+
+.thank-you-card p {
+  color: #9E9E9E;
+text-align: center;
+font-size: 20px;
+font-weight: 400;
+
+}
+
+
+
+/* Thank you page end*/
+
 
 @media (max-width: 480px) {
   .single__btn button {
     font-size: 1.2rem;
   }
+
+  /* Thank you page start*/
+.thank-you-card {
+  background-image: url('/assets/img/thank-you-page/bg.png'); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 4em 1em; /* Adjust the padding as needed */
+  color: #fff; /* Set text color to white or any desired color */
+}
+
+.thank-you-card h2 {
+  color: #FFF;
+text-align: center;
+font-size: 32px;
+font-weight: 700;
+margin-top: 0.5em;
+
+}
+
+.thank-you-card p {
+  color: #9E9E9E;
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+
+}
+
+
+
+/* Thank you page end*/
 
   /* Enter Password css start*/
 
