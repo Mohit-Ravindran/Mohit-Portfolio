@@ -62,9 +62,33 @@
 
                     </div>
                     <div class="single__btn">
-                        <button><span>View Website</span><img src="./assets/img/web.svg" alt=""></button>
-                        <button><span>VIEW PROJECT</span><img src="./assets/img/view-project.svg" alt=""></button>
+                        <a href="https://rb.gy/nhl0px" target="_blank" style="display: none;">
+                            <button>
+                                <span>Download App</span>
+                                <img src="./assets/img/download.svg" alt="">
+                            </button>
+                        </a>
+                        <a href="https://t.ly/1FwOD" target="_blank">
+                            <button>
+                                <span>View Project</span>
+                                <img src="./assets/img/view-project.svg" alt="">
+                            </button>
+                        </a>
+                        <!-- <a href="#" onclick="openPasswordPopup('https://t.ly/1FwOD', 'VIEW PROJECT')">
+                            <button>
+                                <span>View Project</span>
+                                <img src="./assets/img/view-project.svg" alt="">
+                            </button>
+                        </a> -->
+                    </div>
 
+                    <div id="passwordPopup" class="password-popup">
+                        <div class="popup-content">
+                            <span class="close" onclick="closePasswordPopup()">&times;</span>
+                            <label for="password">Enter Password:</label>
+                            <input type="password" id="password">
+                            <button id="passwordSubmit" onclick="checkPasswordAndOpenLink()">Submit</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 single__left-img">
@@ -88,6 +112,31 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="./script/main.js"></script>
+    <script>
+        function openPasswordPopup(link, buttonText) {
+            document.getElementById('passwordPopup').style.display = 'block';
+            document.getElementById('password').value = ''; // Clear the password field
+            document.getElementById('passwordSubmit').onclick = function () {
+                checkPasswordAndOpenLink(link);
+            };
+        }
+
+        function closePasswordPopup() {
+            document.getElementById('passwordPopup').style.display = 'none';
+        }
+
+        function checkPasswordAndOpenLink(link) {
+            var password = document.getElementById('password').value;
+            // Add your password validation logic here
+            // For simplicity, I'll assume the password is '123'
+            if (password === 'mo@design') {
+                window.open(link, '_blank');
+                closePasswordPopup();
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
 </body>
 
 </html>
