@@ -87,11 +87,31 @@
                     </div>
 
                     <div id="passwordPopup" class="password-popup">
-                        <div class="popup-content">
+                        <!-- <div class="popup-content">
                             <span class="close" onclick="closePasswordPopup()">&times;</span>
                             <label for="password">Enter Password:</label>
                             <input type="password" id="password">
                             <button id="passwordSubmit" onclick="checkPasswordAndOpenLink()">Submit</button>
+                        </div> -->
+                        <div class="password">
+                            <div class="password__content">
+                                <h4>Enter Password</h4>
+                                <p> <span>Note -</span> The password ensures confidentiality, granting access only to
+                                    those
+                                    entrusted with the key. Dive into a secure
+                                    space where creativity meets discretion.</p>
+                                <form>
+                                    <input placeholder="Password Here" type="password" id="password">
+                                    <button id="passwordSubmit" onclick="checkPasswordAndOpenLink()">Submit</button>
+
+                                </form>
+                                <div class="password__close" onclick="closePasswordPopup()">
+                                    <img src="./assets/img/close.svg" alt="">
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
