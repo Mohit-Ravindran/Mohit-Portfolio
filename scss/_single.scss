@@ -139,6 +139,16 @@ color: #f00;
         gap: 2.4rem;
         @media #{$xss} {
                 justify-content: center;
+                margin: 4rem 0 0;
+            }
+
+            a{
+                &:nth-child(2){
+                    button{
+                        background-color: #f00 !important;
+                            border: 0.1rem solid #f00 !important;
+                    }
+                }
             }
         button{
             padding: 1.6rem 2.4rem;
@@ -152,6 +162,7 @@ color: #f00;
 
                 @media #{$xss}{
                     font-size: 1.2rem;
+                        padding: 1.4rem 2.2rem;
                 }
             
             &:nth-child(1){

@@ -773,6 +773,7 @@
 @media (max-width: 480px) {
   .contact__content p {
     font-size: 1.4rem;
+    text-align: center;
   }
 }
 .contact__social {
@@ -786,6 +787,11 @@
 .contact__flex {
   display: flex;
   align-items: center;
+}
+@media (max-width: 480px) {
+  .contact__flex {
+    justify-content: center;
+  }
 }
 .contact__flex span {
   font-size: 1.6rem;
@@ -804,6 +810,11 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+@media (max-width: 480px) {
+  .contact__icons ul {
+    justify-content: center;
+  }
 }
 .contact__form {
   border-radius: 16px;
@@ -1246,7 +1257,12 @@
 @media (max-width: 480px) {
   .single__btn {
     justify-content: center;
+    margin: 4rem 0 0;
   }
+}
+.single__btn a:nth-child(2) button {
+  background-color: #f00 !important;
+  border: 0.1rem solid #f00 !important;
 }
 .single__btn button {
   padding: 1.6rem 2.4rem;
@@ -1261,6 +1277,7 @@
 @media (max-width: 480px) {
   .single__btn button {
     font-size: 1.2rem;
+    padding: 1.4rem 2.2rem;
   }
 }
 .single__btn button:nth-child(1) {
@@ -1323,11 +1340,6 @@
   gap: 1.6rem;
   margin: 0 0 0.8rem;
 }
-@media (max-width: 480px) {
-  .process__title {
-    justify-content: center;
-  }
-}
 .process__title span {
   font-size: 2.4rem;
   font-weight: 700;
@@ -1343,7 +1355,6 @@
 @media (max-width: 767px) {
   .process__content h2 {
     font-size: 3.2rem;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1356,11 +1367,6 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
-}
-@media (max-width: 480px) {
-  .process__content p {
-    text-align: center;
-  }
 }
 .process__content h4 {
   font-size: 1.6rem;
@@ -1380,12 +1386,6 @@
   border-radius: 100px;
   border: 1px solid #454545;
   position: relative;
-}
-@media (max-width: 480px) {
-  .process__stage {
-    width: 100%;
-    justify-content: center;
-  }
 }
 .process__stage::after {
   position: absolute;

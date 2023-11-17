@@ -8,9 +8,6 @@
         align-items: center;
         gap: 1.6rem;
         margin: 0 0 0.8rem;
-        @media #{$xss} {
-                justify-content: center;
-            }
         span{
             font-size: 2.4rem;
             font-weight: 700;
@@ -27,7 +24,6 @@
 
             @media #{$xs}{
                 font-size: 3.2rem;
-                text-align: center;
             }
                         @media #{$lg} {
                             font-size: 3.2rem;
@@ -38,9 +34,6 @@
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0;
-            @media #{$xss} {
-                    text-align: center;
-                }
         }
         h4{
             font-size: 1.6rem;
@@ -59,10 +52,6 @@
         border-radius: 100px;
         border: 1px solid #454545;
         position: relative;
-        @media #{$xss} {
-                width: 100%;
-                justify-content: center;
-            }
         &::after{
             position: absolute;
                 content: "";
