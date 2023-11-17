@@ -1830,20 +1830,6 @@ img {
   border-radius: 2em;
 }
 
-.banner ul li {
-  border-radius: 2rem;
-  background-blend-mode: overlay;
-  width: 18%;
-  height: 85vh;
-  background-size: cover;
-  transition: all 100ms ease-in-out;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
 @media (max-width: 991px) {
   .process__img.mobile-none {
     display: none;
