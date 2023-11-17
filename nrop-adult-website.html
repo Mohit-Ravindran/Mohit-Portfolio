@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section class="single">
+        <div class="container">
+            <div class="single__back">
+                <a href="project.html">
+                    <img src="./assets/img/back.svg" alt="">
+                    <span>BACK</span>
+                </a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="single__title">
+                        <img src="./assets/img/project/nrop-adult-website/nrop-logo.png" alt="">
+                        <h3>Erotic Elegance Redefined: 
+                            Introducing Nrop.io</h3>
+                        <p>Embark on a seamless journey into the adult content industry with Nrop.io, a meticulously designed web app crafted with UI/UX excellence in Figma. Redefining simplicity, Nrop.io enables you to effortlessly start and manage your Adult Tube Site. Unleash the full profit potential with powerful monetization tools, providing a lucrative platform for creators and entrepreneurs alike. Navigate the adult content space with ease, as Nrop.io combines user-friendly design with robust functionality, making it your go-to solution for building and monetizing adult content platforms.</p>
+                    </div>
+                    <div class="single__flex">
+                        <div class="single__tool">
+                            <h4>Duration :</h4>
+                            <p>1 Month</p>
+                        </div>
+                        <div class="single__tool">
+                            <h4>Parent Company :</h4>
+                            <p>CodeGama</p>
+                        </div>
+
+                    </div>
+
+                    <div class="single__tool">
+                        <h4>Tools Used :</h4>
+                        <ul class="list-unstyled">
+                            <li><img src="./assets/img/skill/figma.svg" alt=""></li>
+                            <li><img src="./assets/img/skill/ai.svg" alt=""></li>
+                            <li><img src="./assets/img/skill/ps.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                    <div class="single__btn">
+                        <a href="https://rb.gy/nhl0px" target="_blank" style="display: none;">
+                            <button>
+                                <span>Download App</span>
+                                <img src="./assets/img/download.svg" alt="">
+                            </button>
+                        </a>
+                        <a href="https://tinyurl.com/yc5s96nh" target="_blank">
+                            <button>
+                                <span>View Project</span>
+                                <img src="./assets/img/view-project.svg" alt="">
+                            </button>
+                        </a>
+                        <!-- <a href="#" onclick="openPasswordPopup('https://t.ly/1FwOD', 'VIEW PROJECT')">
+                            <button>
+                                <span>View Project</span>
+                                <img src="./assets/img/view-project.svg" alt="">
+                            </button>
+                        </a> -->
+                    </div>
+
+                    <div id="passwordPopup" class="password-popup">
+                        <div class="popup-content">
+                            <span class="close" onclick="closePasswordPopup()">&times;</span>
+                            <label for="password">Enter Password:</label>
+                            <input type="password" id="password">
+                            <button id="passwordSubmit" onclick="checkPasswordAndOpenLink()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 single__left-img">
+                    <div class="single__img">
+                        <img src="./assets/img/project/nrop-adult-website/nrop-mockup.png" alt="">
+                    </div>
+                </div>
+                <div class="single__next">
+                    <a href="e-commerce-apps.html">
+                        <img src="assets/img/next-project.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./script/main.js"></script>
+    <script>
+        function openPasswordPopup(link, buttonText) {
+            document.getElementById('passwordPopup').style.display = 'block';
+            document.getElementById('password').value = ''; // Clear the password field
+            document.getElementById('passwordSubmit').onclick = function () {
+                checkPasswordAndOpenLink(link);
+            };
+        }
+
+        function closePasswordPopup() {
+            document.getElementById('passwordPopup').style.display = 'none';
+        }
+
+        function checkPasswordAndOpenLink(link) {
+            var password = document.getElementById('password').value;
+            // Add your password validation logic here
+            // For simplicity, I'll assume the password is '123'
+            if (password === 'mo@design') {
+                window.open(link, '_blank');
+                closePasswordPopup();
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+</body>
+
+</html>
