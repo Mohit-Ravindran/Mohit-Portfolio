@@ -39,9 +39,6 @@
             font-size: 1.6rem;
             font-weight: 700;
             margin: 3rem 0 0.8rem;
-            @media #{$xss} {
-                    text-align: center;
-                }
         }
     }
     &__stage{
